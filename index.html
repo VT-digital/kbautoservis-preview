@@ -101,6 +101,15 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
 .nav-sticky{backdrop-filter:blur(14px);background:rgba(11,15,20,.7);border-bottom:1px solid rgba(107,154,171,.12)}
 .badge-year{font-family:'Oswald';font-size:11px;letter-spacing:.2em;color:#F59E0B;border:1px solid rgba(245,158,11,.4);padding:4px 12px;border-radius:999px;display:inline-block}
 .kbd{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:rgba(107,154,171,.08);border:1px solid rgba(107,154,171,.2);border-radius:6px;font-size:12px;color:#B7CBDD}
+@keyframes fadeInUp{to{opacity:1;transform:translateY(0)}}
+@keyframes floatBlob{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(20px,-20px) scale(1.05)}}
+.float-blob{animation:floatBlob 8s ease-in-out infinite}
+.float-blob-2{animation:floatBlob 10s ease-in-out infinite reverse}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+.hero-badge{opacity:0;animation:fadeInUp .6s .1s ease forwards}
+.hero-subtitle{opacity:0;animation:fadeInUp .7s .4s ease forwards}
+.hero-buttons{opacity:0;animation:fadeInUp .7s .5s ease forwards}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 .mobile-menu{transform:translateX(100%);transition:transform .3s ease}
 .mobile-menu.open{transform:translateX(0)}
@@ -236,14 +245,14 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
 <!-- HERO -->
 <section class="relative min-h-screen hero-bg flex items-center overflow-hidden">
   <div class="absolute inset-0 grid-lines opacity-40"></div>
-  <div class="absolute top-1/3 right-[-10%] w-[350px] h-[350px] md:w-[700px] md:h-[700px] bg-[#F59E0B]/8 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 left-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#4A90B8]/10 rounded-full blur-3xl"></div>
+  <div class="absolute top-1/3 right-[-10%] w-[350px] h-[350px] md:w-[700px] md:h-[700px] bg-[#F59E0B]/8 rounded-full blur-3xl float-blob"></div>
+  <div class="absolute bottom-0 left-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#4A90B8]/10 rounded-full blur-3xl float-blob-2"></div>
 
   <div class="max-w-7xl mx-auto px-6 pt-32 pb-20 relative z-10 w-full">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
       <!-- LEFT: copy -->
       <div class="lg:col-span-7">
-        <div class="flex items-center gap-4 mb-7">
+        <div class="hero-badge flex items-center gap-4 mb-7" style="opacity:0;transform:translateY(12px)">
           <span class="badge-year">ROK ZALOŽENÍ 1990</span>
           <span class="flex items-center gap-2 text-xs text-[#B7CBDD]"><span class="pulse-dot"></span>Otevřeno Po–Pá 7:00–15:00</span>
         </div>
@@ -254,11 +263,11 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <span class="word"><span class="inner" style="color:#F59E0B">VĚŘÍTE.</span></span>
         </h1>
 
-        <p class="text-base md:text-lg text-[#B7CBDD] max-w-xl mb-9 leading-relaxed">
+        <p class="hero-subtitle text-base md:text-lg text-[#B7CBDD] max-w-xl mb-9 leading-relaxed" style="opacity:0;transform:translateY(12px)">
           Rodinný autoservis v Háji u Duchcova. Mechanika, lakovna, klempírna, pneuservis, STK a pojistné události — <span class="text-white font-medium">vše pod jednou střechou už 35 let</span>.
         </p>
 
-        <div class="flex flex-wrap items-center gap-4 mb-12">
+        <div class="hero-buttons flex flex-wrap items-center gap-4 mb-8" style="opacity:0;transform:translateY(12px)">
           <a href="#rezervace" class="btn-primary px-7 py-4 rounded-xl shine inline-flex items-center gap-3 text-sm">
             REZERVOVAT ONLINE
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -267,6 +276,18 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.21l-1.7.85a11 11 0 005.5 5.5l.85-1.7a1 1 0 011.21-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2A16 16 0 013 5z"/></svg>
             ZAVOLAT 602 452 353
           </a>
+        </div>
+
+        <!-- address chip -->
+        <div class="hero-address flex items-center gap-3 text-sm text-[#B7CBDD]" style="opacity:0;transform:translateY(12px);animation:fadeInUp .8s .6s ease forwards">
+          <div class="flex items-center gap-2 px-4 py-2.5 rounded-full border border-[#1c2836] bg-[#0e1520]/60 backdrop-blur">
+            <svg class="w-4 h-4 text-[#F59E0B] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Závodní 52, Háj u Duchcova</span>
+          </div>
+          <div class="hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-full border border-[#1c2836] bg-[#0e1520]/60 backdrop-blur">
+            <svg class="w-4 h-4 text-[#F59E0B] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>p.kmoch@email.cz</span>
+          </div>
         </div>
       </div>
 
@@ -296,11 +317,11 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
             <div class="text-[11px] font-bold tracking-wider uppercase mt-1">LET<br/>TRADICE</div>
           </div>
         </div>
-        <!-- mobile version: stacked -->
-        <div class="lg:hidden grid grid-cols-2 gap-3 mt-4">
-          <div class="rounded-xl overflow-hidden aspect-[3/4] col-span-2"><img src="assets/budova.jpg" alt="Budova K.B. Autoservis" class="w-full h-full object-cover" /></div>
-          <div class="rounded-xl overflow-hidden aspect-square"><img src="assets/dilna.jpg" alt="Dílna autoservisu" class="w-full h-full object-cover" /></div>
-          <div class="rounded-xl overflow-hidden aspect-square"><img src="assets/lakovna-oktavka-cerna.jpg" alt="Lakovna – Octavia" class="w-full h-full object-cover" /></div>
+        <!-- mobile version: stacked, below fold -->
+        <div class="lg:hidden grid grid-cols-2 gap-3 mt-16" data-aos="fade-up" data-aos-delay="300">
+          <div class="rounded-xl overflow-hidden aspect-[3/4] col-span-2"><img src="assets/budova.jpg" alt="Budova K.B. Autoservis" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="rounded-xl overflow-hidden aspect-square" data-aos="fade-up" data-aos-delay="400"><img src="assets/dilna.jpg" alt="Dílna autoservisu" class="w-full h-full object-cover" loading="lazy" /></div>
+          <div class="rounded-xl overflow-hidden aspect-square" data-aos="fade-up" data-aos-delay="500"><img src="assets/lakovna-oktavka-cerna.jpg" alt="Lakovna – Octavia" class="w-full h-full object-cover" loading="lazy" /></div>
         </div>
       </div>
     </div>
@@ -308,11 +329,11 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
     <!-- trust bar -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl border-t border-[#1c2836] pt-8 mt-8" data-aos="fade-up" data-aos-delay="600">
       <div>
-        <div class="display text-4xl md:text-5xl glow-num font-bold">35</div>
+        <div class="display text-4xl md:text-5xl glow-num font-bold" data-count="35">0</div>
         <div class="text-xs text-[#8FA3B8] tracking-wider uppercase mt-1">let na trhu</div>
       </div>
       <div>
-        <div class="display text-4xl md:text-5xl glow-num font-bold">12</div>
+        <div class="display text-4xl md:text-5xl glow-num font-bold" data-count="12">0</div>
         <div class="text-xs text-[#8FA3B8] tracking-wider uppercase mt-1">služeb od A do Z</div>
       </div>
       <div>
@@ -325,6 +346,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
       </div>
     </div>
   </div>
+  <div class="scroll-hint hidden md:flex">SCROLL</div>
 </section>
 
 <!-- MARQUEE -->
@@ -876,6 +898,47 @@ document.querySelectorAll('.card').forEach(el=>{
   });
   el.addEventListener('mouseleave',()=>{el.style.transform=''});
 });
+
+// counting animation for trust bar numbers
+const countEls=document.querySelectorAll('[data-count]');
+const countObserver=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const el=entry.target;
+      const target=+el.dataset.count;
+      const duration=1500;
+      const start=performance.now();
+      const animate=(now)=>{
+        const progress=Math.min((now-start)/duration,1);
+        const ease=1-Math.pow(1-progress,3);
+        el.textContent=Math.round(target*ease);
+        if(progress<1)requestAnimationFrame(animate);
+      };
+      requestAnimationFrame(animate);
+      countObserver.unobserve(el);
+    }
+  });
+},{threshold:.5});
+countEls.forEach(el=>countObserver.observe(el));
+
+// GSAP section heading reveals
+document.querySelectorAll('.section-label').forEach(el=>{
+  gsap.from(el,{x:-30,opacity:0,duration:.6,scrollTrigger:{trigger:el,start:'top 85%'}});
+});
+
+// GSAP parallax on service feature images
+document.querySelectorAll('.feat-card img').forEach(img=>{
+  gsap.to(img,{y:-30,ease:'none',scrollTrigger:{trigger:img,start:'top bottom',end:'bottom top',scrub:true}});
+});
+
+// GSAP gallery stagger
+gsap.from('.gallery-item',{y:40,opacity:0,duration:.6,stagger:.1,scrollTrigger:{trigger:'#galerie',start:'top 75%'}});
+
+// smooth parallax on marquee
+gsap.to('.marquee-track',{x:-50,ease:'none',scrollTrigger:{trigger:'.marquee',start:'top bottom',end:'bottom top',scrub:true}});
+
+// review cards entrance
+gsap.from('.review-card',{scale:.9,opacity:0,duration:.5,stagger:.08,scrollTrigger:{trigger:'#recenze',start:'top 75%'}});
 
 // hamburger menu
 const hamburger=document.getElementById('hamburger');
