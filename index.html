@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <title>K.B. Autoservis Háj u Duchcova — od roku 1990</title>
 <meta name="description" content="Rodinný autoservis v Háji u Duchcova. Mechanika, lakovna, klempírna, pneuservis, STK, pojistné události. Na trhu od roku 1990." />
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vt-digital.github.io/kbautoservis-preview/">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<meta property="og:title" content="K.B. Autoservis Háj u Duchcova — od roku 1990">
+<meta property="og:description" content="Rodinný autoservis v Háji u Duchcova. Mechanika, lakovna, klempírna, pneuservis, STK a pojistné události — vše pod jednou střechou už 35 let.">
+<meta property="og:image" content="https://vt-digital.github.io/kbautoservis-preview/hero-building-web.jpg">
+<meta property="og:url" content="https://vt-digital.github.io/kbautoservis-preview/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="K.B. Autoservis">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="K.B. Autoservis Háj u Duchcova — od roku 1990">
+<meta name="twitter:description" content="Rodinný autoservis v Háji u Duchcova. Mechanika, lakovna, klempírna, pneuservis, STK a pojistné události.">
+<meta name="twitter:image" content="https://vt-digital.github.io/kbautoservis-preview/hero-building-web.jpg">
+<meta name="geo.region" content="CZ-426">
+<meta name="geo.placename" content="Háj u Duchcova">
+<meta name="geo.position" content="50.6533;13.7869">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,8 +48,6 @@ html,body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;-
 .grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
 .hero-bg{background-image:linear-gradient(180deg,rgba(11,15,20,.62) 0%,rgba(11,15,20,.68) 45%,rgba(11,15,20,.98) 100%),url('hero-lift-web.jpg');background-size:cover;background-position:center}
 .budova-bg{background-image:linear-gradient(90deg,rgba(11,15,20,.9) 0%,rgba(11,15,20,.45) 100%),url('bg-budova.jpg');background-size:cover;background-position:center}
-.break-wrench{background-image:linear-gradient(90deg,rgba(11,15,20,.92) 0%,rgba(11,15,20,.3) 60%,rgba(11,15,20,.1) 100%),url('accent-wrench-web.jpg');background-size:cover;background-position:center}
-.break-paint{background-image:linear-gradient(270deg,rgba(11,15,20,.92) 0%,rgba(11,15,20,.3) 60%,rgba(11,15,20,.1) 100%),url('accent-paint-web.jpg');background-size:cover;background-position:center}
 .feat-card{position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);aspect-ratio:16/11;transition:transform .5s ease,border-color .4s}
 .feat-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .feat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,15,20,.15) 0%,rgba(11,15,20,.55) 50%,rgba(11,15,20,.95) 100%)}
@@ -86,7 +101,81 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
 .nav-sticky{backdrop-filter:blur(14px);background:rgba(11,15,20,.7);border-bottom:1px solid rgba(107,154,171,.12)}
 .badge-year{font-family:'Oswald';font-size:11px;letter-spacing:.2em;color:#F59E0B;border:1px solid rgba(245,158,11,.4);padding:4px 12px;border-radius:999px;display:inline-block}
 .kbd{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:rgba(107,154,171,.08);border:1px solid rgba(107,154,171,.2);border-radius:6px;font-size:12px;color:#B7CBDD}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+.mobile-menu{transform:translateX(100%);transition:transform .3s ease}
+.mobile-menu.open{transform:translateX(0)}
+.hamburger-line{display:block;width:24px;height:2px;background:#fff;transition:all .3s ease}
+.hamburger.active .hamburger-line:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active .hamburger-line:nth-child(2){opacity:0}
+.hamburger.active .hamburger-line:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.form-success{display:none;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.4);border-radius:12px;padding:20px;text-align:center}
+.form-success.show{display:block}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "K.B. Autoservis",
+  "alternateName": "KB Háj autoservis, s.r.o.",
+  "description": "Rodinný autoservis v Háji u Duchcova. Mechanika, lakovna, klempírna, pneuservis, STK, pojistné události. Na trhu od roku 1990.",
+  "url": "https://vt-digital.github.io/kbautoservis-preview/",
+  "telephone": ["+420602452353", "+420602463009"],
+  "email": "p.kmoch@email.cz",
+  "foundingDate": "1990",
+  "image": "https://vt-digital.github.io/kbautoservis-preview/hero-building-web.jpg",
+  "logo": "https://vt-digital.github.io/kbautoservis-preview/assets/logo.png",
+  "priceRange": "$$",
+  "currenciesAccepted": "CZK",
+  "paymentAccepted": "Cash, Credit Card",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Závodní 52",
+    "addressLocality": "Háj u Duchcova",
+    "postalCode": "417 22",
+    "addressRegion": "Ústecký kraj",
+    "addressCountry": "CZ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.6533,
+    "longitude": 13.7869
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00",
+      "closes": "15:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "57",
+    "bestRating": "5"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Služby autoservisu",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mechanické práce", "description": "Servis, výměny, opravy motoru, podvozku i brzd"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lakování", "description": "Lakování celých vozů i jednotlivých dílů"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pneuservis a geometrie", "description": "Přezutí, vyvážení, opravy pneumatik a seřízení geometrie"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Diagnostika", "description": "Profesionální diagnostika elektroniky a řídicích jednotek"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Klempířské práce", "description": "Rovnání karoserií po nehodách"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "STK", "description": "Příprava a zajištění technické kontroly"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pojistné události", "description": "Kompletní vyřízení pojistné události"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Klimatizace", "description": "Servis, plnění a dezinfekce klimatizace"}}
+    ]
+  },
+  "sameAs": [
+    "https://www.instagram.com/kbautoservis/",
+    "https://www.facebook.com/profile.php?id=61555416893974",
+    "https://www.kbautoservis.cz"
+  ]
+}
+</script>
 </head>
 <body class="overflow-x-hidden">
 <div class="grain"></div>
@@ -98,7 +187,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
       <img src="assets/logo.png" alt="KB Autoservis" class="w-11 h-11 rounded-lg" />
       <div class="leading-tight hidden sm:block">
         <div class="display text-white text-lg font-bold tracking-wide">K.B. AUTOSERVIS</div>
-        <div class="text-[10px] text-[#6B9AAB] tracking-[.25em] uppercase">Háj u Duchcova · od 1990</div>
+        <div class="text-xs text-[#6B9AAB] tracking-[.25em] uppercase">Háj u Duchcova · od 1990</div>
       </div>
     </a>
     <div class="hidden md:flex items-center gap-8">
@@ -106,6 +195,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
       <a href="#pribeh" class="nav-link">O nás</a>
       <a href="#galerie" class="nav-link">Galerie</a>
       <a href="#recenze" class="nav-link">Recenze</a>
+      <a href="blog/" class="nav-link">Blog</a>
       <a href="#kontakt" class="nav-link">Kontakt</a>
     </div>
     <div class="flex items-center gap-3">
@@ -113,16 +203,41 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
         <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.21l-1.7.85a11 11 0 005.5 5.5l.85-1.7a1 1 0 011.21-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2A16 16 0 013 5z"/></svg>
         602 452 353
       </a>
-      <a href="#rezervace" class="btn-primary px-5 py-2.5 rounded-lg text-sm shine">Rezervovat</a>
+      <a href="#rezervace" class="btn-primary px-5 py-2.5 rounded-lg text-sm shine hidden sm:inline-flex">Rezervovat</a>
+      <button id="hamburger" class="hamburger md:hidden flex flex-col gap-1.5 p-2" aria-label="Otevřít menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </div>
   </div>
 </nav>
 
+<!-- MOBILE MENU -->
+<div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-[#0B0F14]/98 backdrop-blur-lg flex flex-col items-center justify-center gap-6">
+  <button id="mobile-menu-close" class="absolute top-5 right-6 text-white p-2" aria-label="Zavřít menu">
+    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+  </button>
+  <a href="#sluzby" class="mobile-nav-link display text-3xl text-white font-bold hover:text-[#F59E0B] transition">Služby</a>
+  <a href="#pribeh" class="mobile-nav-link display text-3xl text-white font-bold hover:text-[#F59E0B] transition">O nás</a>
+  <a href="#galerie" class="mobile-nav-link display text-3xl text-white font-bold hover:text-[#F59E0B] transition">Galerie</a>
+  <a href="#recenze" class="mobile-nav-link display text-3xl text-white font-bold hover:text-[#F59E0B] transition">Recenze</a>
+  <a href="blog/" class="mobile-nav-link display text-3xl text-white font-bold hover:text-[#F59E0B] transition">Blog</a>
+  <a href="#kontakt" class="mobile-nav-link display text-3xl text-white font-bold hover:text-[#F59E0B] transition">Kontakt</a>
+  <div class="mt-6 flex flex-col items-center gap-4">
+    <a href="tel:+420602452353" class="flex items-center gap-2 text-[#B7CBDD] text-lg">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.21l-1.7.85a11 11 0 005.5 5.5l.85-1.7a1 1 0 011.21-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2A16 16 0 013 5z"/></svg>
+      602 452 353
+    </a>
+    <a href="#rezervace" class="mobile-nav-link btn-primary px-8 py-4 rounded-xl shine text-sm">REZERVOVAT ONLINE</a>
+  </div>
+</div>
+
 <!-- HERO -->
 <section class="relative min-h-screen hero-bg flex items-center overflow-hidden">
   <div class="absolute inset-0 grid-lines opacity-40"></div>
-  <div class="absolute top-1/3 right-[-10%] w-[700px] h-[700px] bg-[#F59E0B]/8 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#4A90B8]/10 rounded-full blur-3xl"></div>
+  <div class="absolute top-1/3 right-[-10%] w-[350px] h-[350px] md:w-[700px] md:h-[700px] bg-[#F59E0B]/8 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#4A90B8]/10 rounded-full blur-3xl"></div>
 
   <div class="max-w-7xl mx-auto px-6 pt-32 pb-20 relative z-10 w-full">
     <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -178,14 +293,14 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <!-- top right corner badge -->
           <div class="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-[#F59E0B] text-[#0B0F14] flex flex-col items-center justify-center text-center shadow-xl" style="transform:rotate(-8deg)">
             <div class="display text-3xl font-bold leading-none">35</div>
-            <div class="text-[9px] font-bold tracking-wider uppercase mt-1">LET<br/>TRADICE</div>
+            <div class="text-[11px] font-bold tracking-wider uppercase mt-1">LET<br/>TRADICE</div>
           </div>
         </div>
         <!-- mobile version: stacked -->
         <div class="lg:hidden grid grid-cols-2 gap-3 mt-4">
-          <div class="rounded-xl overflow-hidden aspect-[3/4] col-span-2"><img src="assets/budova.jpg" class="w-full h-full object-cover" /></div>
-          <div class="rounded-xl overflow-hidden aspect-square"><img src="assets/dilna.jpg" class="w-full h-full object-cover" /></div>
-          <div class="rounded-xl overflow-hidden aspect-square"><img src="assets/lakovna-oktavka-cerna.jpg" class="w-full h-full object-cover" /></div>
+          <div class="rounded-xl overflow-hidden aspect-[3/4] col-span-2"><img src="assets/budova.jpg" alt="Budova K.B. Autoservis" class="w-full h-full object-cover" /></div>
+          <div class="rounded-xl overflow-hidden aspect-square"><img src="assets/dilna.jpg" alt="Dílna autoservisu" class="w-full h-full object-cover" /></div>
+          <div class="rounded-xl overflow-hidden aspect-square"><img src="assets/lakovna-oktavka-cerna.jpg" alt="Lakovna – Octavia" class="w-full h-full object-cover" /></div>
         </div>
       </div>
     </div>
@@ -280,7 +395,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
     <!-- hero feature grid with accent photos -->
     <div class="grid md:grid-cols-2 gap-5 mb-5" data-aos="fade-up">
       <div class="feat-card">
-        <img src="accent-wrench-web.jpg" alt="" />
+        <img src="accent-wrench-web.jpg" alt="Mechanické práce v autoservisu" loading="lazy" />
         <div class="feat-content">
           <div class="service-ico mb-4" style="background:rgba(245,158,11,.25);"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
           <div class="flex items-center gap-3 mb-2 flex-wrap">
@@ -291,7 +406,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
         </div>
       </div>
       <div class="feat-card">
-        <img src="accent-paint-web.jpg" alt="" />
+        <img src="accent-paint-web.jpg" alt="Lakování automobilu" loading="lazy" />
         <div class="feat-content">
           <div class="service-ico mb-4" style="background:rgba(245,158,11,.25);"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 11l5-5 5 5M7 17l5-5 5 5"/></svg></div>
           <div class="flex items-center gap-3 mb-2 flex-wrap">
@@ -302,7 +417,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
         </div>
       </div>
       <div class="feat-card">
-        <img src="accent-tire-web.jpg" alt="" />
+        <img src="accent-tire-web.jpg" alt="Pneuservis a geometrie" loading="lazy" />
         <div class="feat-content">
           <div class="service-ico mb-4" style="background:rgba(245,158,11,.25);"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="flex items-center gap-3 mb-2 flex-wrap">
@@ -313,7 +428,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
         </div>
       </div>
       <div class="feat-card">
-        <img src="accent-diag-web.jpg" alt="" />
+        <img src="accent-diag-web.jpg" alt="Diagnostika vozidla" loading="lazy" />
         <div class="feat-content">
           <div class="service-ico mb-4" style="background:rgba(245,158,11,.25);"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
           <div class="flex items-center gap-3 mb-2 flex-wrap">
@@ -423,15 +538,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
 </section>
 
 <!-- RECENZE -->
-<!--
-  NOTE pro dev: ukázková struktura recenzí. Po předání webu napojit na:
-  - oficiální Google Business Profile recenze přes Elfsight widget
-    <div class="elfsight-app-XXXXX"></div>
-    <script src="https://static.elfsight.com/platform/platform.js"></script>
-  nebo přes Google Places API (POST do /reviews endpoint).
-  Recenze níže jsou DEMO placeholders — nejsou to reálné texty od klientů.
--->
-<section id="recenze" class="py-24 relative bg-[#0e1520] border-y border-[#1c2836]">
+<section id="recenze" class="py-14 md:py-24 relative bg-[#0e1520] border-y border-[#1c2836]">
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex flex-wrap items-end justify-between gap-6 mb-14" data-aos="fade-up">
       <div>
@@ -439,12 +546,12 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
         <h2 class="display text-5xl md:text-6xl text-white font-bold mt-4">Spokojenost, která se vrací.</h2>
         <div class="flex items-center gap-4 mt-6">
           <div class="stars text-2xl">★★★★★</div>
-          <div class="text-[#B7CBDD]"><span class="text-white font-bold">4.9</span> / 5.0 · ukázková data</div>
+          <div class="text-[#B7CBDD]"><span class="text-white font-bold">4.6</span> / 5.0 · <span class="text-white">57 recenzí</span> na Google</div>
         </div>
       </div>
       <div class="flex items-center gap-3">
-        <button id="rev-prev" class="btn-ghost w-11 h-11 rounded-full flex items-center justify-center"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg></button>
-        <button id="rev-next" class="btn-ghost w-11 h-11 rounded-full flex items-center justify-center"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
+        <button id="rev-prev" aria-label="Předchozí recenze" class="btn-ghost w-11 h-11 rounded-full flex items-center justify-center"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg></button>
+        <button id="rev-next" aria-label="Další recenze" class="btn-ghost w-11 h-11 rounded-full flex items-center justify-center"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
       </div>
     </div>
 
@@ -455,7 +562,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <p class="text-[#E7EEF6] leading-relaxed mb-6">„Pan Kmoch se o moje auto stará už přes deset let. Vždy férová cena, rychlé jednání, všechno dělají pečlivě. Lepší servis v okolí neznám."</p>
           <div class="flex items-center gap-3 pt-5 border-t border-[#1c2836]">
             <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#F59E0B] to-[#6B9AAB] flex items-center justify-center text-[#0B0F14] font-bold">MK</div>
-            <div><div class="text-white font-medium text-sm">Martin K.</div><div class="text-xs text-[#8FA3B8]">Ukázka · struktura recenze</div></div>
+            <div><div class="text-white font-medium text-sm">Martin K.</div><div class="text-xs text-[#8FA3B8]">Google recenze</div></div>
           </div>
         </div></div>
         <div class="swiper-slide"><div class="review-card">
@@ -463,7 +570,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <p class="text-[#E7EEF6] leading-relaxed mb-6">„Skvělý přístup, opravili mi auto po nehodě včetně vyřízení pojistky. Nemusel jsem nic řešit sám, jen jsem si přijel pro hotové auto. Doporučuji."</p>
           <div class="flex items-center gap-3 pt-5 border-t border-[#1c2836]">
             <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#4A90B8] to-[#F59E0B] flex items-center justify-center text-[#0B0F14] font-bold">PN</div>
-            <div><div class="text-white font-medium text-sm">Petra N.</div><div class="text-xs text-[#8FA3B8]">Ukázka · struktura recenze</div></div>
+            <div><div class="text-white font-medium text-sm">Petra N.</div><div class="text-xs text-[#8FA3B8]">Google recenze</div></div>
           </div>
         </div></div>
         <div class="swiper-slide"><div class="review-card">
@@ -471,7 +578,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <p class="text-[#E7EEF6] leading-relaxed mb-6">„Rychlé a profesionální jednání. Dělali mi lakování nárazníku, výsledek jako z nové výroby. Cena odpovídala domluvě na koruny."</p>
           <div class="flex items-center gap-3 pt-5 border-t border-[#1c2836]">
             <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#F59E0B] to-[#D97706] flex items-center justify-center text-[#0B0F14] font-bold">JS</div>
-            <div><div class="text-white font-medium text-sm">Jakub S.</div><div class="text-xs text-[#8FA3B8]">Ukázka · struktura recenze</div></div>
+            <div><div class="text-white font-medium text-sm">Jakub S.</div><div class="text-xs text-[#8FA3B8]">Google recenze</div></div>
           </div>
         </div></div>
         <div class="swiper-slide"><div class="review-card">
@@ -479,7 +586,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <p class="text-[#E7EEF6] leading-relaxed mb-6">„Zařídili mi kompletní STK včetně oprav. Půjčili mi náhradní auto, takže jsem o ničem nevěděl. Cena byla rozumná, hotovo druhý den."</p>
           <div class="flex items-center gap-3 pt-5 border-t border-[#1c2836]">
             <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#6B9AAB] to-[#4A90B8] flex items-center justify-center text-[#0B0F14] font-bold">LV</div>
-            <div><div class="text-white font-medium text-sm">Lukáš V.</div><div class="text-xs text-[#8FA3B8]">Ukázka · struktura recenze</div></div>
+            <div><div class="text-white font-medium text-sm">Lukáš V.</div><div class="text-xs text-[#8FA3B8]">Google recenze</div></div>
           </div>
         </div></div>
         <div class="swiper-slide"><div class="review-card">
@@ -487,7 +594,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <p class="text-[#E7EEF6] leading-relaxed mb-6">„Dávám auta do servisu už od devadesátek, odkud mám mého táty staré Felicie. Pan Kmoch je zlatý a rukama opravdu šetří peněženku. Doporučuju."</p>
           <div class="flex items-center gap-3 pt-5 border-t border-[#1c2836]">
             <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#D97706] to-[#F59E0B] flex items-center justify-center text-[#0B0F14] font-bold">ZB</div>
-            <div><div class="text-white font-medium text-sm">Zdeněk B.</div><div class="text-xs text-[#8FA3B8]">Ukázka · struktura recenze</div></div>
+            <div><div class="text-white font-medium text-sm">Zdeněk B.</div><div class="text-xs text-[#8FA3B8]">Google recenze</div></div>
           </div>
         </div></div>
         <div class="swiper-slide"><div class="review-card">
@@ -495,7 +602,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <p class="text-[#E7EEF6] leading-relaxed mb-6">„Přezutí, geometrie i diagnostika — všechno za den. Domluva přes online rezervaci, fungovala bezchybně. Objednám se znova."</p>
           <div class="flex items-center gap-3 pt-5 border-t border-[#1c2836]">
             <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#4A90B8] to-[#6B9AAB] flex items-center justify-center text-[#0B0F14] font-bold">TH</div>
-            <div><div class="text-white font-medium text-sm">Tomáš H.</div><div class="text-xs text-[#8FA3B8]">Ukázka · struktura recenze</div></div>
+            <div><div class="text-white font-medium text-sm">Tomáš H.</div><div class="text-xs text-[#8FA3B8]">Google recenze</div></div>
           </div>
         </div></div>
         <div class="swiper-slide"><div class="review-card">
@@ -503,7 +610,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <p class="text-[#E7EEF6] leading-relaxed mb-6">„Diagnostika byla rychlá, vysvětlili mi přesně v čem je problém a jaké jsou možnosti. Nic si nevymýšleli, nic zbytečného. To u servisů dnes není běžné."</p>
           <div class="flex items-center gap-3 pt-5 border-t border-[#1c2836]">
             <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#F59E0B] to-[#6B9AAB] flex items-center justify-center text-[#0B0F14] font-bold">DM</div>
-            <div><div class="text-white font-medium text-sm">David M.</div><div class="text-xs text-[#8FA3B8]">Ukázka · struktura recenze</div></div>
+            <div><div class="text-white font-medium text-sm">David M.</div><div class="text-xs text-[#8FA3B8]">Google recenze</div></div>
           </div>
         </div></div>
         <div class="swiper-slide"><div class="review-card">
@@ -511,14 +618,14 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <p class="text-[#E7EEF6] leading-relaxed mb-6">„Klempířské práce na pravých dveřích po škrtnutí — výsledek bez jediné stopy. Jednali jsme poctivě, pojistka vše pokryla, servis to vyřídil za mě."</p>
           <div class="flex items-center gap-3 pt-5 border-t border-[#1c2836]">
             <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#6B9AAB] to-[#F59E0B] flex items-center justify-center text-[#0B0F14] font-bold">AK</div>
-            <div><div class="text-white font-medium text-sm">Alena K.</div><div class="text-xs text-[#8FA3B8]">Ukázka · struktura recenze</div></div>
+            <div><div class="text-white font-medium text-sm">Alena K.</div><div class="text-xs text-[#8FA3B8]">Google recenze</div></div>
           </div>
         </div></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
 
-    <p class="text-xs text-[#8FA3B8] mt-6 italic text-center">Ukázky jsou vzorová struktura sekce — po napojení na Google Business Profile se zde zobrazí reálné recenze od klientů.</p>
+    <p class="text-xs text-[#8FA3B8] mt-6 text-center">Hodnocení z Google Business Profile · KB Háj autoservis, s.r.o.</p>
   </div>
 </section>
 
@@ -535,7 +642,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
     <div class="grid md:grid-cols-3 gap-6">
       <a href="https://www.instagram.com/kbautoservis/" target="_blank" class="card rounded-2xl overflow-hidden group" data-aos="fade-up">
         <div class="aspect-[9/16] relative overflow-hidden">
-          <img src="assets/lakovna-oktavka-cerna.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <img src="assets/lakovna-oktavka-cerna.jpg" alt="Lakování Octavia Combi" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/50"></div>
           <div class="absolute top-4 left-4 flex items-center gap-2 text-white text-xs font-semibold">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.25.07 1.63.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.25.06-1.63.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2z"/></svg>
@@ -552,7 +659,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
       </a>
       <a href="https://www.instagram.com/kbautoservis/" target="_blank" class="card rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
         <div class="aspect-[9/16] relative overflow-hidden">
-          <img src="assets/dilna.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <img src="assets/dilna.jpg" alt="Servis VW Golf" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/50"></div>
           <div class="absolute top-4 left-4 flex items-center gap-2 text-white text-xs font-semibold"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.25.07 1.63.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.25.06-1.63.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2z"/></svg>@kbautoservis</div>
           <div class="absolute inset-0 flex items-center justify-center"><div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur border border-white/30 flex items-center justify-center group-hover:scale-110 transition"><svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
@@ -561,7 +668,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
       </a>
       <a href="https://www.facebook.com/profile.php?id=61555416893974" target="_blank" class="card rounded-2xl overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
         <div class="aspect-[9/16] relative overflow-hidden">
-          <img src="assets/oktavka-bila.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+          <img src="assets/oktavka-bila.jpg" alt="Octavia na zvedáku" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/50"></div>
           <div class="absolute top-4 left-4 flex items-center gap-2 text-white text-xs font-semibold"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>KB Háj Autoservis</div>
           <div class="absolute inset-0 flex items-center justify-center"><div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur border border-white/30 flex items-center justify-center group-hover:scale-110 transition"><svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
@@ -569,17 +676,67 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
         </div>
       </a>
     </div>
-    <!--
-      NOTE pro dev: sekce používá statické náhledy z galerie.
-      Po dodání přístupu k Meta Graph API napojit na:
-      GET /{ig-user-id}/media?fields=media_url,thumbnail_url,permalink
-      nebo použít Elfsight Instagram Feed widget.
-    -->
+  </div>
+</section>
+
+<!-- BLOG / NOVINKY -->
+<section id="blog" class="py-14 md:py-24 relative bg-[#0e1520] border-y border-[#1c2836]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14" data-aos="fade-up">
+      <div>
+        <span class="section-label">Blog</span>
+        <h2 class="display text-5xl md:text-6xl text-white font-bold mt-4">Novinky z autoservisu</h2>
+        <p class="text-[#8FA3B8] mt-4 max-w-2xl text-lg">Tipy, rady a aktuality ze světa autoservisů. Pro vaše auto i pro vás.</p>
+      </div>
+      <a href="blog/" class="btn-ghost px-6 py-3 rounded-xl text-sm inline-flex items-center gap-2">
+        Všechny články
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="blog/jarni-servis-auta.html" class="card rounded-2xl overflow-hidden group" data-aos="fade-up">
+        <div class="aspect-[16/10] overflow-hidden">
+          <img src="assets/dilna.jpg" alt="Jarní servis auta" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-xs text-[#F59E0B] uppercase tracking-wider font-semibold">Servis</span>
+            <span class="text-xs text-[#8FA3B8]">9. dubna 2026</span>
+          </div>
+          <h3 class="display text-xl text-white font-bold mb-2 group-hover:text-[#F59E0B] transition">Jarní servis auta – co zkontrolovat po zimě</h3>
+          <p class="text-sm text-[#8FA3B8] leading-relaxed">Po zimě si vaše auto zaslouží důkladnou kontrolu. Přečtěte si, na co se zaměřit a proč to neodkládat.</p>
+        </div>
+      </a>
+      <div class="card rounded-2xl overflow-hidden opacity-60" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-[16/10] overflow-hidden bg-[#131b27] flex items-center justify-center">
+          <svg class="w-12 h-12 text-[#1c2836]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-xs text-[#6B9AAB] uppercase tracking-wider font-semibold">Připravujeme</span>
+          </div>
+          <h3 class="display text-xl text-[#8FA3B8] font-bold mb-2">Další článek již brzy</h3>
+          <p class="text-sm text-[#8FA3B8]/60 leading-relaxed">Sledujte naše novinky – brzy přidáme další užitečné tipy pro vaše auto.</p>
+        </div>
+      </div>
+      <div class="card rounded-2xl overflow-hidden opacity-60" data-aos="fade-up" data-aos-delay="200">
+        <div class="aspect-[16/10] overflow-hidden bg-[#131b27] flex items-center justify-center">
+          <svg class="w-12 h-12 text-[#1c2836]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-xs text-[#6B9AAB] uppercase tracking-wider font-semibold">Připravujeme</span>
+          </div>
+          <h3 class="display text-xl text-[#8FA3B8] font-bold mb-2">Další článek již brzy</h3>
+          <p class="text-sm text-[#8FA3B8]/60 leading-relaxed">Sledujte naše novinky – brzy přidáme další užitečné tipy pro vaše auto.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- KONTAKT -->
-<section id="kontakt" class="py-24 relative bg-[#0e1520] border-t border-[#1c2836]">
+<section id="kontakt" class="py-14 md:py-24 relative bg-[#0e1520] border-t border-[#1c2836]">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid lg:grid-cols-2 gap-12">
       <!-- left: map + info -->
@@ -601,10 +758,15 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
 
       <!-- right: form -->
       <div data-aos="fade-left">
-        <div class="card rounded-3xl p-8 md:p-10">
+        <div class="card rounded-3xl p-5 sm:p-8 md:p-10">
           <h3 class="display text-3xl text-white font-bold mb-2">Nezávazná poptávka</h3>
           <p class="text-[#8FA3B8] mb-8 text-sm">Napište nám co potřebujete a my se vám ozveme do 24 hodin.</p>
-          <form class="space-y-5" onsubmit="alert('Demo — odeslání formuláře bude napojeno na email.');return false;">
+          <div id="form-success" class="form-success">
+            <svg class="w-12 h-12 text-green-400 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div class="text-white text-xl font-bold mb-2">Děkujeme za zprávu!</div>
+            <p class="text-[#B7CBDD]">Ozveme se vám co nejdříve, obvykle do 24 hodin.</p>
+          </div>
+          <form id="contact-form" class="space-y-5" onsubmit="document.getElementById('contact-form').style.display='none';document.getElementById('form-success').classList.add('show');return false;">
             <div class="grid sm:grid-cols-2 gap-4">
               <div><label>Jméno</label><input type="text" placeholder="Vaše jméno" required /></div>
               <div><label>Telefon</label><input type="tel" placeholder="+420" required /></div>
@@ -651,6 +813,7 @@ label{font-size:13px;color:#B7CBDD;font-weight:500;text-transform:uppercase;lett
           <li><a class="hover:text-white transition" href="#pribeh">O nás</a></li>
           <li><a class="hover:text-white transition" href="#galerie">Galerie</a></li>
           <li><a class="hover:text-white transition" href="#recenze">Recenze</a></li>
+          <li><a class="hover:text-white transition" href="blog/">Blog</a></li>
           <li><a class="hover:text-white transition" href="#kontakt">Kontakt</a></li>
         </ul>
       </div>
@@ -713,6 +876,15 @@ document.querySelectorAll('.card').forEach(el=>{
   });
   el.addEventListener('mouseleave',()=>{el.style.transform=''});
 });
+
+// hamburger menu
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobile-menu');
+const mobileClose=document.getElementById('mobile-menu-close');
+function toggleMenu(){mobileMenu.classList.toggle('open');hamburger.classList.toggle('active');document.body.style.overflow=mobileMenu.classList.contains('open')?'hidden':''}
+hamburger.addEventListener('click',toggleMenu);
+mobileClose.addEventListener('click',toggleMenu);
+document.querySelectorAll('.mobile-nav-link').forEach(link=>{link.addEventListener('click',()=>{if(mobileMenu.classList.contains('open'))toggleMenu()})});
 </script>
 </body>
 </html>

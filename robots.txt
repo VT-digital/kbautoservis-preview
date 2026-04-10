@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vt-digital.github.io/kbautoservis-preview/sitemap.xml
